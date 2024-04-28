@@ -12,7 +12,7 @@ Base = declarative_base()
 class Produto(Base):
     __tablename__ = "Produto"
     id = Column(Integer, primary_key=True)
-    title = Column(String(50))
+    titulo = Column(String(50))
     preco = Column(Float())
 
 Base.metadata.create_all(engine)
